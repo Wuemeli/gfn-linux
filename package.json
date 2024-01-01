@@ -2,8 +2,11 @@
   "name": "gfn-linux",
   "appId": "com.github.wuemeli.${name}",
   "version": "1.0.0",
+  "author": "Wuemeli",
   "description": "A Linux desktop app for GeForce NOW",
+  "repository": "https://github.com/wuemeli/gfn-linux",
   "main": "./build/main.js",
+
   "scripts": {
     "start": "npm run compile && electron .",
     "compile": "tsc",
@@ -25,7 +28,6 @@
       "artifactName": "gfn-linux.${ext}"
     }
   },
-  "repository": "https://github.com/wuemeli/gfn-linux",
   "keywords": [
     "gfn",
     "geforcenow",
