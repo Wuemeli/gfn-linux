@@ -12,6 +12,7 @@ This code here is faster and more stable than the original one.
 - Removed unused Shortcuts (Will be added back in the future)
 
 ## 📑 Installation
+Go to the [Releases](https://github.com/Wuemeli/gfn-linux/releases) page and download the latest release. It ends with `.AppImage`. Make it executable and run it.
 
 ## 👥 Credits
 Initial Codebase: [🔗 gfn-electron](https://github.com/hmlendea/gfn-electron)
