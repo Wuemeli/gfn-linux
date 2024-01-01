@@ -10,6 +10,7 @@ This code here is faster and more stable than the original one.
 - Migrated everything to TypeScript
 - Uses the V8 Engine instead of the NodeJS Engine
 - Removed unused Shortcuts (Will be added back in the future)
+- Fixes Input Delay
 
 ## 📑 Installation
 Go to the [Releases](https://github.com/Wuemeli/gfn-linux/releases/tag/latest) and download the latest release. 
