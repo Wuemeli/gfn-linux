@@ -32,7 +32,8 @@ async function createWindow() {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: false,
     },
-  });
+    icon: path.join(__dirname, '../icons/512x512.png'),
+  })
 
   mainWindow.webContents.userAgent = userAgent;
   mainWindow.loadURL(homePage);

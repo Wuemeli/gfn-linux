@@ -1,7 +1,7 @@
 {
   "name": "gfn-linux",
   "appId": "com.github.wuemeli.${name}",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Wuemeli",
     "email": "contact@wuemeli.com"
@@ -15,11 +15,12 @@
     "build": "npm run compile && electron-builder"
   },
   "build": {
-    "asar": false,
+    "appId": "com.github.wuemeli.${name}",
+    "asar": true,
     "files": [
       "build/**/*",
-      "package.json",
-      "main.js"
+      "icons/**/*",
+      "package.json"
     ],
     "linux": {
       "target": [
@@ -28,7 +29,7 @@
       ],
       "category": "Games",
       "artifactName": "gfn-linux.${ext}",
-      "icon": "icon.png"
+      "icon": "icons/512x512.png"
     }
   },
   "keywords": [
