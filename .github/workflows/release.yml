@@ -33,6 +33,5 @@ jobs:
          prerelease: false
          title: "Latest Build"
          files: |
-           dist/gfn-linux.zip
            dist/gfn-linux.AppImage
            dist/gfn-linux.deb
