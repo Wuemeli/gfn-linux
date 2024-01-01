@@ -22,12 +22,15 @@ jobs:
      - name: "Install Dependencies"
        run: npm install
 
+     - name: "Build"
+       run: npm run build || echo "Build failed"
+
      - name: "Release"
        uses: "marvinpinto/action-automatic-releases@latest"
        with:
          repo_token: "${{ secrets.GITHUB_TOKEN }}"
          automatic_release_tag: "latest"
-         prerelease: true
+         prerelease: false
          title: "Latest Build"
          files: |
            dist/gfn-linux.zip

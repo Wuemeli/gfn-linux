@@ -9,11 +9,6 @@
   "description": "A Linux desktop app for GeForce NOW",
   "repository": "https://github.com/wuemeli/gfn-linux",
   "main": "./build/main.js",
-  "release": {
-      "branches": [
-        "main"
-      ]
-  },
   "scripts": {
     "start": "npm run compile && electron .",
     "compile": "tsc",
