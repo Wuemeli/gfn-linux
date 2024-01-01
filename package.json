@@ -2,7 +2,10 @@
   "name": "gfn-linux",
   "appId": "com.github.wuemeli.${name}",
   "version": "1.0.0",
-  "author": "Wuemeli",
+  "author": {
+    "name": "Wuemeli",
+    "email": "contact@wuemeli.com"
+  },
   "description": "A Linux desktop app for GeForce NOW",
   "repository": "https://github.com/wuemeli/gfn-linux",
   "main": "./build/main.js",
@@ -15,16 +18,19 @@
     "asar": false,
     "files": [
       "build/**/*",
+      "icons.png",
       "package.json",
       "main.js"
     ],
     "linux": {
       "target": [
         "zip",
-        "AppImage"
+        "AppImage",
+        "deb"
       ],
       "category": "Games",
-      "artifactName": "gfn-linux.${ext}"
+      "artifactName": "gfn-linux.${ext}",
+      "icon": "build/icon.png"
     }
   },
   "keywords": [

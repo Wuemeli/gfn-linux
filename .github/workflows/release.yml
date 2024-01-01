@@ -2,17 +2,21 @@ name: "Automatic Release"
 
 on:
  push:
-    branches:
-      - "main"
+   branches:
+     - "main"
 
 jobs:
  release:
    name: "Release"
-   runs-on: "ubuntu-latest"
-
+   runs-on: ubuntu-latest
    steps:
-     - name: "Checkout code"
+     - name: "Checkout"
        uses: actions/checkout@v4
+
+     - name: "Setup Node"
+       uses: actions/setup-node@v1
+       with:
+         node-version: "16.x"
 
      - name: "Install Dependencies"
        run: npm install
@@ -20,11 +24,12 @@ jobs:
      - name: "Build"
        run: npm run build
 
-     - name: "Create Release"
+     - name: "Release"
        uses: "marvinpinto/action-automatic-releases@latest"
        with:
          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-         prerelease: false
+         automatic_release_tag: "latest"
+         prerelease: true
+         title: "Development Build"
          files: |
-           gfn-linux.zip
-           gfn-linux.AppImage
+           dist/*
