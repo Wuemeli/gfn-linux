@@ -37,12 +37,6 @@ async function createWindow() {
   mainWindow.webContents.userAgent = userAgent;
   mainWindow.loadURL(homePage);
 
-  mainWindow.webContents.on('before-input-event', (event, input) => {
-    if (input.key === 'Escape') {
-      event.preventDefault();
-    }
-  });
-
 }
 
 app.whenReady().then(async () => {
