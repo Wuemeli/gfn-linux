@@ -1,7 +1,7 @@
 {
   "name": "gfn-linux",
   "appId": "com.github.wuemeli.${name}",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": {
     "name": "Wuemeli",
     "email": "contact@wuemeli.com"
@@ -16,7 +16,7 @@
   },
   "build": {
     "appId": "com.github.wuemeli.${name}",
-    "asar": true,
+    "asar": false,
     "files": [
       "build/**/*",
       "icons/**/*",
