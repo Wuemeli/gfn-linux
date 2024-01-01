@@ -18,7 +18,6 @@
     "asar": false,
     "files": [
       "build/**/*",
-      "icons.png",
       "package.json",
       "main.js"
     ],
@@ -29,7 +28,7 @@
       ],
       "category": "Games",
       "artifactName": "gfn-linux.${ext}",
-      "icon": "build/icon.png"
+      "icon": "icon.png"
     }
   },
   "keywords": [
