@@ -37,10 +37,15 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
+build/
 
 # Dependency directories
 node_modules/
 jspm_packages/
+
+# Dependency JSON
+bun.lockb
+package-lock.json
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -99,10 +104,14 @@ dist
 
 # vuepress build output
 .vuepress/dist
+.dist
 
 # vuepress v2.x temp and cache directory
 .temp
 .cache
+
+# Docusaurus cache and generated files
+.docusaurus
 
 # Serverless directories
 .serverless/

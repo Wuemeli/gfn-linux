@@ -1,0 +1,43 @@
+{
+  "name": "gfn-linux",
+  "appId": "com.github.wuemeli.${name}",
+  "version": "1.0.0",
+  "description": "A Linux desktop app for GeForce NOW",
+  "main": "./build/main.js",
+  "scripts": {
+    "start": "npm run compile && electron .",
+    "compile": "tsc",
+    "build": "npm run compile && electron-builder"
+  },
+  "build": {
+    "asar": false,
+    "files": [
+      "build/**/*",
+      "package.json",
+      "main.js"
+    ],
+    "linux": {
+      "target": [
+        "zip",
+        "AppImage"
+      ],
+      "category": "Games",
+      "artifactName": "gfn-linux.${ext}"
+    }
+  },
+  "repository": "https://github.com/wuemeli/gfn-linux",
+  "keywords": [
+    "gfn",
+    "geforcenow",
+    "geforce-now"
+  ],
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "typescript": "^5.3.3",
+    "v8-compile-cache": "^2.4.0"
+  }
+}
