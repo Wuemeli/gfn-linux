@@ -7,7 +7,7 @@ on:
 
 jobs:
  pre-release:
-   name: "Pre Release"
+   name: "Auto Release"
    runs-on: "ubuntu-latest"
 
    steps:
@@ -30,7 +30,7 @@ jobs:
          repo_token: "${{ secrets.GITHUB_TOKEN }}"
          automatic_release_tag: "latest"
          prerelease: true
-         title: "Development Build"
+         title: "Latest Build"
          files: |
            dist/gfn-linux.zip
            dist/gfn-linux.AppImage
