@@ -32,4 +32,6 @@ jobs:
          prerelease: true
          title: "Development Build"
          files: |
-           dist/*
+           dist/gfn-linux.AppImage
+           dist/gfn-linux.deb
+           dist/gfn-linux.zip
