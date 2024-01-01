@@ -1,7 +1,7 @@
 {
   "name": "gfn-linux",
   "appId": "com.github.wuemeli.${name}",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": {
     "name": "Wuemeli",
     "email": "contact@wuemeli.com"
