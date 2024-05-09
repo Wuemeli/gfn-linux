@@ -7,9 +7,9 @@ import { switchFullscreenState } from './windowManager';
 let homePage: string = 'https://play.geforcenow.com';
 let userAgent: string = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3';
 
-app.commandLine.appendSwitch('enable-zero-copy')
-app.commandLine.appendSwitch('enable-features', 'VaapiVideoDecoder')
-app.commandLine.appendSwitch('enable-gpu-rasterization')
+app.commandLine.appendSwitch('enable-zero-copy');
+app.commandLine.appendSwitch('enable-features', 'VaapiVideoDecoder');
+app.commandLine.appendSwitch('enable-gpu-rasterization');
 app.commandLine.appendSwitch('enable-vaapi-mjpeg-decode');
 app.commandLine.appendSwitch('enable-features', 'WaylandWindowDecorations');
 app.commandLine.appendSwitch('enable-features', 'RawDraw');
@@ -18,7 +18,6 @@ app.commandLine.appendSwitch('enable-accelerated-mjpeg-decode');
 app.commandLine.appendSwitch('enable-accelerated-video');
 app.commandLine.appendSwitch('ignore-gpu-blocklist');
 app.commandLine.appendSwitch('enable-native-gpu-memory-buffers');
-app.commandLine.appendSwitch('enable-zero-copy');
 app.commandLine.appendSwitch('enable-gpu-memory-buffer-video-frames');
 app.commandLine.appendSwitch('use-gl', 'egl');
 
@@ -34,7 +33,6 @@ async function createWindow() {
 
   mainWindow.webContents.userAgent = userAgent;
   mainWindow.loadURL(homePage);
-
 }
 
 app.whenReady().then(async () => {

@@ -30,6 +30,11 @@
       "category": "Games",
       "artifactName": "gfn-linux.${ext}",
       "icon": "icons/512x512.png"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
     }
   },
   "keywords": [
